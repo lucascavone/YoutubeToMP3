@@ -32,7 +32,14 @@ for entry in video_urls:
     else:
         print("Title was changed.\n")
 
+    # Change file path if needed
     filename = f"/Users/luca/Desktop/Media/Music/NewMusic_04-2023/{new_title}"
+    print(f"Current file path:\n >> {filename}")
+    change_file = input(f"\nChange file path? Y/N:\n >> ")
+    if change_file.lower() == "y":
+        filename = input("\nEnter new file path:\n >> ")
+    elif change_file.lower() == "n":
+        print(f"File path was not changed.")
 
     ydl_opts = {
         'format': 'bestaudio/best',
