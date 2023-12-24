@@ -13,6 +13,8 @@ name which are added as metadata to the file.
 ## Installation
 Use the code provided in the `main.py` file. Import the **yt_dlp** python library using `pip install yt-dlp` and 
 the **Mutagen** python library using the `pip install mutagen`. 
+
+The following `ffmpeg.exe` and `ffprobe.exe` binaries should be downloaded from this [link](https://ffmpeg.org/download.html). In order for the code to run correctly, these files should be moved to the `pythonProject/venv/bin/` folder.
  
 ## Development
 I chose personalization over automation when developing this
@@ -29,8 +31,3 @@ yt_dlp library has a built-in function to download YouTube playlists.
 Since I wanted to be able to modify the filename for each song if
 needed, I decided to iterate through each song in the playlist without
 using the built-in function.
-
-## Troubleshooting
-It may be necessary to download and install the **ffmpeg** and **ffprobe** software from this [link](https://ffmpeg.org/download.html).
-
-[Update - 03/10/2023] At the time of developing this program, I recall using the **ffmpeg** and **ffprobe** packages. However, recent testing has indicated the contrary. This README has been updated accordingly.
